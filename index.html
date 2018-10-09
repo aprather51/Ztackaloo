@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Ztackaloo</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body class="preload">
+  <span id="menu">
+    <a onclick="openSideMenu()">
+      <div class="menu-svg-wrap">
+        <svg viewbox="0 0 30 30" width="30" height="30" stroke="#fff">
+          <path d="M0,5 30,5" stroke-width="3" />
+          <path d="M0,15 30,15" stroke-width="3" />
+          <path d="M0,25 30,25" stroke-width="3" />
+        </svg>
+      </div>
+    </a>
+  </span>
+
+  <aside id="side-menu">
+    <nav>
+      <a class="close-menu" onclick="closeSideMenu()">
+        <svg viewBox='0 0 30 30' width="30" height="30">
+          <path d='M2,2L28,28' stroke-width='4' />
+          <path d='M28,2L2,28' stroke-width='4' />
+        </svg>
+      </a>
+      <a href="#" onclick="closeSideMenu()">Home</a>
+      <a href="#" onclick="closeSideMenu()">About</a>
+      <a href="#" onclick="closeSideMenu()">Pricing</a>
+      <a href="#feature-1" onclick="closeSideMenu()">Features</a>
+      <a href="#" id="btn-signup" onclick="delayClose()">Sign Up</a>
+    </nav>
+  </aside>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="img/Ztackaloo-logo.png" alt="ztackaloo-logo">
+      </div>
+      <div class="nav-link">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Pricing</a>
+        <a href="#feature-1">Features</a>
+        <a href="#" id="btn-signup">Sign Up</a>
+      </div>
+    </nav>
+
+    <section class="content-wrap grid2">
+      <div class="content-left">
+        <h1>Most Productive and Safe Cloud Storage.</h1>
+        <p>A trusted way to store your pictures, music, videos, and most important files.</p>
+        <a href="#" id="header-btn" class="btn">Get This App</a>
+      </div>
+      <div class="content-right">
+        <img src="img/mobile-2-header@2x.png" alt="ztackaloo-mobile">
+      </div>
+    </section>
+  </header>
+
+  <div class="hr">
+    <img src="img/divider.png" alt="mobile-divider">
+  </div>
+
+  <main>
+    <section id="feature-1">
+      <div class="content-wrap grid2">
+
+        <div class="content-left">
+          <img class="fade-up" src="img/mobile-2@2x.png" alt="ztackaloo-mobile-second-section">
+        </div>
+
+        <div class="content-right">
+          <div class="fade-left delay">
+            <h1>Stay Organized</h1>
+            <p>Easy way to access or track your files and directories.</p>
+          </div>
+
+          <div class="fade-left delay">
+            <h1>Content Meets Collaboration</h1>
+            <p>Collaborate with collagues on common set of files. All of the data is synced to all of devices.</p>
+          </div>
+
+          <div class="fade-left delay">
+            <h1>Handle Easy</h1>
+            <p>Send documents, photos, videos, and files to your friends without any stuggles. Sharing have never been so easy.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="hr">
+      <img src="img/divider.png" alt="mobile-divider">
+    </div>
+
+    <section id="feature-2">
+      <div class="content-wrap grid2">
+
+        <div class="content-left">
+          <img class="fade-left" src="img/mobile-3@2x.png" alt="ztackaloo-mobile-third-section">
+        </div>
+
+        <div class="content-right">
+          <div class="fade-right delay">
+            <h1>Flexibity and Speed</h1>
+            <p>Work in flexibity and speed style, as if you were on your computer without taking physical spaces.</p>
+          </div>
+          <div class="fade-right delay">
+            <h1>Management</h1>
+            <p>Control your file transfer performance, size, and determine the reduced loading time with enhanced securities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="hr">
+      <img src="img/divider.png" alt="mobile-divider">
+    </div>
+
+    <section id="feature-3" class="grid3">
+      <div class="content-wrap ">
+        <h1>Secure Your Files</h1>
+        <p>Ztackaloo provide millions of people's trust to store billion of files using our top quality state of art infrastructure. It protects all of your content with advanced security controls. encryption keys management and complete information governace. Join them and protect your data using one of our most productive cloud and collaborate technologies.</p>
+
+        <h2>Start become productive and secure...</h2>
+
+        <a href="#" class="btn"> Join Us Today!</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="grid3">
+    <div class="content-wrap">
+      <h2>Subscribe to our updates</h2>
+      <div id="subscribe">
+        <input type="text" placeholder="Enter your email ">
+        <button>
+          <img src="img/Sent-Icon.svg" alt="paper-plane-send-icon">
+        </button>
+      </div>
+
+      <div id="social-media">
+        <div class="sphere">
+          <img src="img/twitter.svg" alt="twitter">
+        </div>
+        <div class="sphere">
+          <img src="img/facebook.svg" alt="facebook">
+        </div>
+        <div class="sphere">
+          <img src="img/instagram.svg" alt="instagram">
+        </div>
+      </div>
+
+      <div id="footbase">
+        <p>&copy; Copyright 2018 &mdash; <span>Ztackaloo</span> by Arthur Prather,Jr. All Rights Reserved.</p>
+        <div class="foot-link">
+          <a href="#">Privacy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Report an Error</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

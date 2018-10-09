@@ -1,0 +1,18 @@
+#feature-1,
+#feature-2,
+#feature-3 {
+	text-align: center;
+	h1,
+	h2 {
+		color: $primary;
+	}
+	p {
+		color: $secondary;
+	}
+}
+
+#feature-3 {
+	.btn {
+		margin-bottom: 60px;
+	}
+}

@@ -1,0 +1,111 @@
+/*** Mobile Menu ***/
+#menu {
+	position: fixed;
+	top: -100px;
+	right: 50px;
+	width: 10px;
+	height: 50px;
+	display: block;
+	transition: top 0.3s;
+	.menu-svg-wrap {
+		background-color: rgba($primary, $alpha: 0.8);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 45px;
+		height: 45px;
+		padding: 10px;
+		border-radius: 500px;
+	}
+}
+
+#side-menu {
+	background-color: $secondary;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	padding-top: 100px;
+	overflow: hidden;
+	transform: translate3d(-100vw, 0, 0);
+	transition: transform .3s cubic-bezier(0, 0.52, 0, 1);
+	z-index: 1;
+	&.show {
+		transform: translate3d(0vw, 0, 0);
+	}
+	.close-menu {
+		position: absolute;
+		top: -20px;
+		right: 30px;
+		font-size: 60px;
+		font-weight: 100;
+	}
+	a {
+		text-align: center;
+		display: block;
+		color: $white;
+		font-size: 22px;
+		padding: 10px 0;
+		svg {
+			stroke: $primary;
+		}
+	}
+	#btn-signup {
+		background-color: $primary;
+		color: $white;
+		width: 50%;
+		margin: 0 auto;
+		margin-top: 30px;
+		padding: .5;
+		border-radius: 4px;
+		&:focus {
+			background-color: $white;
+			color: $primary;
+			border: 2px solid $white;
+		}
+	}
+}
+
+/*** Header ***/
+header {
+	background-color: $bgColor;
+	background-image: url('../img/Background.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: $white;
+	height: 100vh;
+	min-height: 600px;
+	overflow-y: hidden;
+	nav {
+		width: 88%;
+	}
+	.nav-link {
+		display: none;
+	}
+	.logo {
+		padding-top: 1em;
+		width: 200px;
+		margin: 0 auto;
+	}
+	#header-btn {
+		display: none;
+	}
+	.content-left {
+		h1 {
+			padding-top: 40px;
+			font-size: 2.5rem;
+		}
+		p,
+		.download-app {
+			display: none;
+		}
+	}
+	.content-right {
+		img {
+			padding-top: 20px;
+			width: 75%;
+		}
+	}
+}
