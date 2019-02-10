@@ -12,6 +12,7 @@
 html {
 	opacity: 0;
 	transition: opacity 1s;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -158,7 +159,7 @@ body.preload * {
 	@mixin child-delay {
 		@for $i from 1 to 10 {
 			&:nth-child(#{$i}n) {
-				transition-delay: #{$i * .5}s;
+				transition-delay: #{$i * .2}s;
 			}
 		}
 	}

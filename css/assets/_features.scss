@@ -1,7 +1,7 @@
 #feature-1,
 #feature-2,
 #feature-3 {
-	text-align: center;
+	// text-align: center;
 	h1,
 	h2 {
 		color: $primary;
@@ -12,6 +12,14 @@
 }
 
 #feature-3 {
+	h1,
+	h2 {
+		text-align: center;
+	}
+	h2 {
+		padding-top: 2em;
+		padding-bottom: .5em;
+	}
 	.btn {
 		margin-bottom: 60px;
 	}

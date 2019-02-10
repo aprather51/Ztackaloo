@@ -5,7 +5,7 @@ function fadeIn() {
 	page.style.opacity = '1';
 }
 
-//preload with zero animation
+// preload with zero animation
 setTimeout(function() {
 	document.body.className = '';
 }, 500);
@@ -45,7 +45,7 @@ function hideMenuOnScroll() {
 	prevScroll = currentScroll;
 }
 
-//animation
+//animation - content fade/slide in.
 const offsetScreen = window.innerHeight / 1;
 const elems = document.querySelectorAll('.fade-right, .fade-left, .fade-up');
 
